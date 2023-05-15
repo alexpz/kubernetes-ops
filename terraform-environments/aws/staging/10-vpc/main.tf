@@ -20,7 +20,7 @@ terraform {
 
   backend "remote" {
     # Update to your Terraform Cloud organization
-    organization = "alexpz"
+    organization = "ceethtgosemo"
 
     workspaces {
       name = "kubernetes-ops-staging-10vpc"
