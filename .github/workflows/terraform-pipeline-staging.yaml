@@ -93,12 +93,12 @@ jobs:
           # terraform_version: 0.13.0:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN_STAGING }}
 
-      # - name: debug1
-      #   id: debug1
-      #   working-directory: ${{matrix.tf_config}}
-      #   run: |
-      #     pwd
-      #     ls -l
+      - name: debug1
+        id: debug1
+        working-directory: ${{matrix.tf_config}}
+        run: |
+          pwd
+          ls -l
 
       - name: Terraform Format
         id: fmt
